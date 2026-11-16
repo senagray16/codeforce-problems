@@ -13,11 +13,12 @@ for _ in range(t):
             if i!=0:
                 j.append(i)
             i = 0
-    if len(j)==0:
-        print()
+    if len(j)==0 and i==0:
+        print(0)
+        continue
+
     j.append(i)
     suma = 0
-    print(j)
     
     for a in j:
         suma += ((a-k+1)*(a-k+2))//2
